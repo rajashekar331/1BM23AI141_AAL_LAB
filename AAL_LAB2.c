@@ -26,7 +26,6 @@ void bubbleSort(int arr[], int n) {
     printf("Time taken for sorting: %f seconds\n", time_spent);
     printf("Total operations (comparisons/swaps): %d\n", total_operations);
 }
-
 int main() {
     srand(time(0));
     int random_number = rand() % 1000 + 1;
@@ -46,7 +45,6 @@ int main() {
         }
     }
     printf("No match found. The random number %d is not in the list.\n", random_number);
-
     return 0;
 }
 

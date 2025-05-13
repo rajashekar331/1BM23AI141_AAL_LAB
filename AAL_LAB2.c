@@ -48,3 +48,9 @@ int main() {
     return 0;
 }
 
+#output
+Generated random number: 814
+Time taken for sorting: 0.000002 seconds
+Total operations (comparisons/swaps): 15
+Sorted list: 1 20 945 3002 66749 1000000
+No match found. The random number 814 is not in the list

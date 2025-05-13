@@ -21,3 +21,5 @@ int main() {
     return -1;
 }
 
+##output
+Match found at index 16

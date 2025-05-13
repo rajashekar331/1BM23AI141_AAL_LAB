@@ -60,3 +60,7 @@ int main() {
     return 0;
 }
 
+#output
+text
+5 4 2 3 1 0
+

@@ -33,3 +33,13 @@ int main() {
     printf("\n");
     return 0;
 }
+
+
+#output
+Step after adding 30: 30
+Step after adding 10: 10 30
+Step after adding 50: 10 30 50
+Step after adding 40: 10 30 40 50
+Step after adding 20: 10 20 30 40 50
+Final sorted array:
+10 20 30 40 50

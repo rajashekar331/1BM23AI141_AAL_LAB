@@ -33,3 +33,7 @@ int main() {
     }
     return 0;
 }
+#output
+Generated random number: 12345
+Sorted list: 1 20 945 3002 66749 1000000 
+No match found. The random number 12345 is not in the list.

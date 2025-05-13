@@ -43,3 +43,6 @@ int main() {
     printArray(arr, n);
     return 0;
 }
+#output
+Sorted array is 
+2 3 4 5 8 9 10 

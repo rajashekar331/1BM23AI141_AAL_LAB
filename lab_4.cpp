@@ -6,7 +6,6 @@
 #define V 5  
 int minKey(int key[], int mstSet[]) {
     int min = INT_MAX, minIndex;
-    
     for (int v = 0; v < V; v++) {
         if (mstSet[v] == 0 && key[v] < min) {
             min = key[v];
@@ -15,7 +14,6 @@ int minKey(int key[], int mstSet[]) {
     }
     return minIndex;
 }
-
 void primMST(int graph[V][V]) {
     int parent[V]; 
     int key[V];     
@@ -27,15 +25,9 @@ void primMST(int graph[V][V]) {
     key[0] = 0;  
     parent[0] = -1;  
     for (int count = 0; count < V - 1; count++) {
-        // Pick the minimum key vertex from the set of vertices not yet processed
         int u = minKey(key, mstSet);
-
-        // Include the picked vertex in the MST
         mstSet[u] = 1;
-
-        // Update the key and parent values of the adjacent vertices of the picked vertex
         for (int v = 0; v < V; v++) {
-            // Update the key value if graph[u][v] is smaller and vertex v is not included in MST
             if (graph[u][v] && mstSet[v] == 0 && graph[u][v] < key[v]) {
                 key[v] = graph[u][v];
                 parent[v] = u;
@@ -77,4 +69,25 @@ int main() {
     return 0;
 }
 
+#The output of the given code will be:
+
+Minimum Spanning Tree (MST) Edges:
+Edge    Weight
+A - B   2
+A - D   3
+D - C   4
+C - E   5
+
+Graphical Representation of MST:
+
+2
+A -------- B
+|
+3|
+|
+D -------- C
+5 |
+|
+E
+4 |
 
